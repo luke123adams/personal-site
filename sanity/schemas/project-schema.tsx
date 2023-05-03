@@ -6,7 +6,7 @@ const project = {
         {
             name: 'name',
             title: 'Name',
-            type: 'string',  
+            type: 'string'  
         },
         {
             name: 'slug',
@@ -36,7 +36,7 @@ const project = {
             name: 'content',
             title: 'Content',
             type: 'array',
-            of: [{ type: "block"}],
+            of: [{ type: "block"}]
         }
     ]
 

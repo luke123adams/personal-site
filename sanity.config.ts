@@ -1,6 +1,6 @@
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
-import project from './sanity/schemas/project-schema'
+import schemas from './sanity/schemas'
 
 export default defineConfig({
   
@@ -12,7 +12,7 @@ export default defineConfig({
   basePath: "/admin",
 
   plugins: [deskTool()],
-  schema: { types: [project]}
+  schema: { types: schemas }
 
   
 })
