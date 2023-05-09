@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default async function Home() {
 
-  const projects = await getProjects();
+  const projects: Project[] = await getProjects();
   
   return ( 
   <div className="max-w-5x1 mx-auto">
