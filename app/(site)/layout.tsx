@@ -1,5 +1,5 @@
 import { getPages } from '@/sanity/sanity-utils';
-import './globals.css'
+import '../globals.css'
 import Link from 'next/link'
 
 
@@ -26,12 +26,13 @@ export default async function RootLayout({
           Luke
           </Link>
 
-          <div>
+          <div className="flex-col w-20 items-center gap-x-3">
             {pages.map((page)=>(
             <Link key={page._id} href={`/${page.slug}`}>
               {page.title}
             </Link>
             ))}
+            <br></br>
           </div>
         </header>
         <main className="py-20">{children}</main>
