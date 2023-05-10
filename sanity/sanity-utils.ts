@@ -1,6 +1,7 @@
 import { createClient, groq } from 'next-sanity'
 import  clientConfig  from './config/client-config';
 import  {Project } from '@/types/Project';
+import { Page } from '@/types/Page';
 
 
 export async function getProjects(): Promise<Project[]> {
